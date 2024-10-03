@@ -11,7 +11,7 @@
 		"sources": "https://github.com/z3roco01/parkour-civilization"
 	},
 	"license": "Unlicense",
-	"icon": "assets/parkourciv/icon.png",
+	"icon": "assets/parkour_civ/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
