@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "parkour_civ",
+	"version": "${version}",
+	"name": "Parkour Civilization",
+	"description": "do not choose the beef...",
+	"authors": [
+		"z3roco01"
+	],
+	"contact": {
+		"sources": "https://github.com/z3roco01/parkour-civilization"
+	},
+	"license": "Unlicense",
+	"icon": "assets/parkourciv/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "z3roco01.parkourciv.ParkourCivilization",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "z3roco01.parkourciv.ParkourCivilizationClient",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"parkourciv.mixins.json",
+		{
+			"config": "parkourciv.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": ">=1.21 <=1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	}
+}
